@@ -1,9 +1,9 @@
 <template>
     <div class="navigationBar">
         <ul>
-            <li class="list" @click="toggleA('home')" id="home">
-                <a href="#">
-                    <span class="icon active">
+            <li class="list active" @click="toggleA('home')" id="home">
+                <a href="#" class="active">
+                    <span class="icon">
                         <ion-icon name="home-outline"></ion-icon>
                     </span>
                     <span class="text">Home</span>
@@ -62,18 +62,15 @@ export default {
 }
 
 .navigationBar {
-    z-index: 1;
-    position: fixed;
-    bottom: 30px;
-    left: 35%;
     background: #fff;
     border: 2px solid rgb(100, 100, 100);
     border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70px;
-    width: 250px
+    height: 40px;
+    width: 150px;
+    margin-top: 20px;
 }
 
 .navigationBar ul {
@@ -85,8 +82,8 @@ export default {
 .navigationBar ul li {
     position: relative;
     list-style: none;
-    width: 85px;
-    height: 85px;
+    width: 35px;
+    height: 35px;
     z-index: 1;
 }
 
@@ -109,14 +106,14 @@ export default {
     display: block;
     align-items: center;
     text-align: center;
-    line-height: 85px;
+    line-height: 35px;
     color: black;
-    font-size: 30px;
+    font-size: 18px;
     transition: 0.5s;
 }
 
 .navigationBar ul li.active a .icon {
-    transform: translateY(-35px);
+    transform: translateY(-21px);
 }
 
 
@@ -125,6 +122,7 @@ export default {
     color: black;
     font-weight: bold;
     transition: 0.5s;
+    font-size: 12px;
     opacity: 0;
 }
 
@@ -135,10 +133,10 @@ export default {
 
 .indicator {
     position: absolute;
-    width: 50px;
-    height: 50px;
-    top: -20px;
-    left: 18px;
+    width: 35px;
+    height: 35px;
+    top: -22px;
+    left: 0px;
     background: rgb(13, 138, 221);
     border-radius: 50%;
     border: 6px solid #181818;
@@ -148,36 +146,36 @@ export default {
 .indicator::before {
     content: '';
     position: absolute;
-    top: 22px;
-    left: -20px;
+    top: 13px;
+    left: -18px;
     width: 20px;
     height: 20px;
     background: transparent;
-    border-top-right-radius: 20px;
-    box-shadow: 1px -10px 0 0 #181818;
+    border-top-right-radius: 25px;
+    box-shadow: 1px -9px 0 0 #181818;
 }
 
 .indicator::after {
     content: '';
     position: absolute;
-    top: 22px;
-    right: -20px;
+    top: 13px;
+    right: -18px;
     width: 20px;
     height: 20px;
     background: transparent;
     border-top-left-radius: 20px;
-    box-shadow: -1px -10px 0 0 #181818;
+    box-shadow: -1px -9px 0 0 #181818;
 }
 
 .navigationBar ul li:nth-child(1).active~.indicator {
-    transform: translateX(calc(85px*0));
+    transform: translateX(calc(35px*0));
 }
 
 .navigationBar ul li:nth-child(2).active~.indicator {
-    transform: translateX(calc(85px*1));
+    transform: translateX(calc(35px*1));
 }
 
 .navigationBar ul li:nth-child(3).active~.indicator {
-    transform: translateX(calc(85px*2));
+    transform: translateX(calc(35px*2));
 }
 </style>

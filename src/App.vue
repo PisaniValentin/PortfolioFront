@@ -2,12 +2,16 @@
 import { RouterLink, RouterView } from 'vue-router'
 import NavigationBar from './components/NavigationBar.vue';
 import HelloWorld from './components/HelloWorld.vue'
+import InformationComponent from './components/InformationComponent.vue';
 </script>
 
 <template>
   <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-    <NavigationBar />
+
+    <div>
+      <InformationComponent/>
+    </div>
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
