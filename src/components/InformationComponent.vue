@@ -4,10 +4,7 @@ import NavigationBar from './NavigationBar.vue';
 
 <template>
     <div class="information row d-flex justify-content-center">
-        <div class="informationTop">
-            <p>Valentin</p>
-            <p>Full Stack Developer</p>
-        </div>
+        <h2>Contact Me</h2>
         <div class="informationBottom">
             <a href="">
                 <ion-icon name="mail-outline"></ion-icon>
@@ -32,15 +29,13 @@ import NavigationBar from './NavigationBar.vue';
 
 .information {
     display: flex;
-    position: fixed;
-    top: 20%;
     width: 200px;
     z-index: 1;
     background: #181818;
-    border-radius: 15px;
     color: rgb(221, 221, 221);
     height: 250px;
-    border: 1px solid rgb(204, 207, 209);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 a{
     font-size: 28px;
