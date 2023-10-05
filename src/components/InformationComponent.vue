@@ -6,7 +6,7 @@ import NavigationBar from './NavigationBar.vue';
     <div class="information row d-flex justify-content-center">
         <div class="informationTop">
             <p>Valentin</p>
-            <p>Contact Me:</p>
+            <p>Full Stack Developer</p>
         </div>
         <div class="informationBottom">
             <a href="">
@@ -50,8 +50,14 @@ a{
     justify-content: center;
     align-items: center;
 }
+a:hover{
+    background: transparent;
+}
 
 .informationTop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 .informationBottom{
