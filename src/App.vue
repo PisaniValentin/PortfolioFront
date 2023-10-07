@@ -1,13 +1,15 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
 import InformationComponent from './components/InformationComponent.vue';
-import ProjectSection from './components/ProjectsSection.vue'
+import ProjectSection from './components/ProjectsSection.vue';
+import GithubComponent from './components/GithubComponent.vue';
+import AboutMeComponent from './components/AboutMeComponent.vue';
 </script>
 
 <template>
   <main class="row">
     <div class="col-4 informationContainer">
-      <InformationComponent/>
+      <InformationComponent />
+      <GithubComponent />
       <!--
         <div class="wrapper">
           <nav>
@@ -17,14 +19,13 @@ import ProjectSection from './components/ProjectsSection.vue'
         </div>
       -->
     </div>
-    <div class="col-7 routerContainer">
-      <RouterView />
-    </div>
-    <div>
-      <ProjectSection/>
-    </div>
-    <div>
-      TITLES SECTION
+    <div class="col-7">
+      <div class="sectionContainer">
+        <AboutMeComponent />
+      </div>
+      <div class="sectionContainer">
+        <ProjectSection />
+      </div>
     </div>
   </main>
 </template>
@@ -38,9 +39,9 @@ import ProjectSection from './components/ProjectsSection.vue'
 
 .informationContainer {
   display: flex;
-  justify-content: end;
+  flex-direction: column;
+  justify-content: start;
 }
-
 
 main {
   width: 100vw;
@@ -50,13 +51,14 @@ main {
   padding-top: 20px;
 }
 
-.routerContainer {
+.sectionContainer {
   display: flex;
   justify-content: start;
-  height: 250px;
+  flex-direction: column;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   margin-left: 40px;
+  margin-bottom: 10px;
   padding: 15px;
   background: #181818;
 }

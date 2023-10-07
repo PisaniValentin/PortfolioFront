@@ -35,11 +35,12 @@
 <style>
 .CardContainer {
     display: flex;
-    justify-content:space-between;
+    justify-content: center;
     background: black;
     padding: 20px;   
     border-radius: 15px;
     margin-left: 30px;
+    gap: 50px;
     margin-right: 30px;
 }
 </style>
