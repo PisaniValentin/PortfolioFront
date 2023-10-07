@@ -36,11 +36,9 @@
 .CardContainer {
     display: flex;
     justify-content: center;
+    width: 100%;
     background: black;
-    padding: 20px;   
     border-radius: 15px;
-    margin-left: 30px;
-    gap: 50px;
-    margin-right: 30px;
+    gap: 20px;
 }
 </style>

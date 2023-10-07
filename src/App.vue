@@ -8,22 +8,13 @@ import AboutMeComponent from './components/AboutMeComponent.vue';
 <template>
   <main class="row">
     <div class="col-4 informationContainer">
-      <InformationComponent />
-      <GithubComponent />
-      <!--
-        <div class="wrapper">
-          <nav>
-            <RouterLink to="/">Home</RouterLink>
-            <RouterLink to="/about">About</RouterLink>
-          </nav>
-        </div>
-      -->
-    </div>
-    <div class="col-7">
-      <div class="sectionContainer">
+      <div class="aboutMeContainer">
         <AboutMeComponent />
+        <GithubComponent />
       </div>
-      <div class="sectionContainer">
+    </div>
+    <div class="col-8">
+      <div class="projectContainer">
         <ProjectSection />
       </div>
     </div>
@@ -44,22 +35,25 @@ import AboutMeComponent from './components/AboutMeComponent.vue';
 }
 
 main {
-  width: 100vw;
+  width: 100%;
   line-height: 1.5;
-  min-height: 100vh;
+  min-height: 100%;
   background: #c9c5bd;
-  padding-top: 20px;
+  padding: 20px;
 }
 
-.sectionContainer {
+.projectContainer {
   display: flex;
   justify-content: start;
   flex-direction: column;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  margin-left: 40px;
   margin-bottom: 10px;
-  padding: 15px;
-  background: #181818;
+}
+
+.aboutMeContainer{
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding-right: 30px;
 }
 </style>
