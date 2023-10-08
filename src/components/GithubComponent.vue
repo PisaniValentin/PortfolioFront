@@ -73,6 +73,7 @@ main {
     flex-direction: column;
     align-items: center;
     background: #161b22;
+    border-bottom-left-radius: 15px;
     gap: 10px;
     padding: 10px;
 }

@@ -30,7 +30,6 @@
     background: black;
     border-top-left-radius: 15px;
     padding: 10px;
-    height: 60vh;
 }
 
 img {

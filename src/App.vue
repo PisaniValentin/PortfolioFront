@@ -1,5 +1,4 @@
 <script setup>
-import InformationComponent from './components/InformationComponent.vue';
 import ProjectSection from './components/ProjectsSection.vue';
 import GithubComponent from './components/GithubComponent.vue';
 import AboutMeComponent from './components/AboutMeComponent.vue';
@@ -35,25 +34,21 @@ import AboutMeComponent from './components/AboutMeComponent.vue';
 }
 
 main {
-  width: 100%;
+  width: 100vw;
+  min-height: 100vh;
   line-height: 1.5;
-  min-height: 100%;
   background: #c9c5bd;
   padding: 20px;
 }
 
 .projectContainer {
-  display: flex;
-  justify-content: start;
-  flex-direction: column;
-  margin-bottom: 10px;
+  height: 100%;
 }
 
 .aboutMeContainer{
+  height: 100%;
   display: flex;
-  justify-content: start;
   flex-direction: column;
-  margin-bottom: 10px;
   padding-right: 30px;
 }
 </style>
