@@ -66,6 +66,8 @@ header {
     background: black;
     padding: 10px;
     color: white;
+    box-shadow: rgba(0, 0, 0, 0.45) -19px 20px 20px 0px;
+
 }
 
 main {
@@ -76,6 +78,9 @@ main {
     border-bottom-left-radius: 15px;
     gap: 10px;
     padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.45) -19px 20px 20px 0px;
+
+    
 }
 
 .projectContainer {

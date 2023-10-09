@@ -20,18 +20,41 @@
 </template>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
+    font-family: 'Teko', sans-serif;
 }
 
 .aboutMeContainer {
     width: 100%;
-    background: black;
+    background-image: linear-gradient(to right top, #3803b9, #431fc1, #4d30ca, #5740d1, #614ed9);
     border-top-left-radius: 15px;
-    padding: 10px;
+    padding: 20px;
+    color:white;
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.45) -19px 20px 20px 0px;
+
 }
 
+h2{
+    font-size: 30px;
+}
+
+h4{
+    font-size: 15px;
+    color: rgb(207, 207, 207);
+}
+p{
+    font-size: 15px;
+    color: rgb(207, 207, 207);
+}
+
+a{
+    font-size: 15px0px;
+}
 img {
     align-self: center;
     width: 220px;

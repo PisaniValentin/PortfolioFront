@@ -1,6 +1,5 @@
 <template>
     <div class="CardContainer row">
-        <h2>My projects</h2>
         <div class="card col-3">
             <img class="card-img-top" src="https://api.boosthive.eu/media/image/4c/88/81965a5dffce6e4d223649ef0f78.jpeg"
                 alt="Card image cap">
@@ -38,6 +37,7 @@
 </template>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@100;300&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -47,11 +47,27 @@
 .CardContainer {
     display: flex;
     justify-content: center;
-    padding: 30px;
-    background: black;
+    background-image: linear-gradient(to left top, #3803b9, #431fc1, #4d30ca, #5740d1, #614ed9);
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
-    height: 100%;
+    height: 100%; 
+    padding-top: 50px;
+    gap: 15px;
+    box-shadow: rgba(0, 0, 0, 0.45) 16px 20px 20px 0px;
+    
 }
+.card{
+    height: 35%;
+    font-family: 'Teko', sans-serif;
+}
+.card-img-top{
+    padding: 5px;
+}
+.card-body{
+    padding: 15px;
+    padding-top: 10px;
+}
+
+
 
 </style>

@@ -37,8 +37,8 @@ main {
   width: 100vw;
   min-height: 100vh;
   line-height: 1.5;
-  background: #c9c5bd;
-  padding: 20px;
+  background-image: linear-gradient(to bottom, #150a29, #19051d, #170213, #100008, #000000);
+  padding: 80px;
 }
 
 .projectContainer {
@@ -50,5 +50,6 @@ main {
   display: flex;
   flex-direction: column;
   padding-right: 30px;
+  
 }
 </style>
