@@ -6,13 +6,12 @@ import AboutMeComponent from './components/AboutMeComponent.vue';
 
 <template>
   <main class="row">
-    <div class="col-4 informationContainer">
+    <div class="col-sm-12 col-md-4 ">
       <div class="aboutMeContainer">
         <AboutMeComponent />
-        <GithubComponent />
       </div>
     </div>
-    <div class="col-8">
+    <div class="col-sm-12 col-md-8">
       <div class="projectContainer">
         <ProjectSection />
       </div>
@@ -27,10 +26,13 @@ import AboutMeComponent from './components/AboutMeComponent.vue';
   box-sizing: border-box;
 }
 
-.informationContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
+@media (min-width: 320px){
+
+
+}
+
+.projectContainer {
+  height: 100%;
 }
 
 main {
@@ -38,18 +40,14 @@ main {
   min-height: 100vh;
   line-height: 1.5;
   background-image: linear-gradient(to bottom, #150a29, #19051d, #170213, #100008, #000000);
-  padding: 80px;
+  padding: 30px;
 }
-
-.projectContainer {
-  height: 100%;
-}
-
-.aboutMeContainer{
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  padding-right: 30px;
-  
-}
+/**
+ .aboutMeContainer {
+    display: flex;
+    flex-direction: column;
+    height: 92%;
+  }
+*/
+ 
 </style>
