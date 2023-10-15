@@ -1,6 +1,6 @@
 <template>
     <div class="CardsContainer row">
-        <div class="card col-sm-12 col-md-3">
+        <div class="card col-sm-12 col-md-5">
             <img class="card-img-top" src="https://api.boosthive.eu/media/image/4c/88/81965a5dffce6e4d223649ef0f78.jpeg"
                 alt="Card image cap">
             <div class="card-body">
@@ -8,7 +8,7 @@
                     content.</p>
             </div>
         </div>
-        <div class="card col-sm-12 col-md-3">
+        <div class="card col-sm-12 col-md-5">
             <img class="card-img-top" src="https://api.boosthive.eu/media/image/4c/88/81965a5dffce6e4d223649ef0f78.jpeg"
                 alt="Card image cap">
             <div class="card-body">
@@ -16,7 +16,7 @@
                     content.</p>
             </div>
         </div>
-        <div class="card col-sm-12 col-md-3">
+        <div class="card col-sm-12 col-md-5">
             <img class="card-img-top" src="https://api.boosthive.eu/media/image/4c/88/81965a5dffce6e4d223649ef0f78.jpeg"
                 alt="Card image cap">
             <div class="card-body">
@@ -24,7 +24,7 @@
                     content.</p>
             </div>
         </div>
-        <div class="card col-sm-12 col-md-3">
+        <div class="card col-sm-12 col-md-5">
             <img class="card-img-top" src="https://api.boosthive.eu/media/image/4c/88/81965a5dffce6e4d223649ef0f78.jpeg"
                 alt="Card image cap">
             <div class="card-body">
