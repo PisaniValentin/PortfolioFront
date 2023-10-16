@@ -2,6 +2,7 @@
 import ProjectSection from './components/ProjectsSection.vue';
 import GithubComponent from './components/GithubComponent.vue';
 import AboutMeComponent from './components/AboutMeComponent.vue';
+import SocialMediaComponent from './components/SocialMediaComponent.vue';
 </script>
 
 <template>
@@ -14,6 +15,7 @@ import AboutMeComponent from './components/AboutMeComponent.vue';
     <div class="col-sm-12 col-md-8">
       <div class="projectContainer">
         <ProjectSection />
+        <SocialMediaComponent/>
       </div>
     </div>
   </main>
