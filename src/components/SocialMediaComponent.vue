@@ -30,9 +30,14 @@
     height: 300px;
     clip-path: url('#clip');
     border: none;
-    left: -100px;
-    background: red;
+    left: -99px;
+    background: rgb(255, 0, 0);
     transform: scaleX(-1);
+}
+.circulo:hover{
+    background: yellow;
+    left: -105px;
+    top: -4px;
 }
 
 .circulo1 {
@@ -47,6 +52,11 @@
     transform: rotate(120deg)
 }
 
+.circulo1:hover{
+    background: yellow;
+    top: -26px;
+}
+
 .circulo2 {
     position: absolute;
     width: 300px;
@@ -56,7 +66,11 @@
     background: rgb(0, 255, 55);
     transform: scale(1);
 }
-
+.circulo2:hover{
+    background: yellow;
+    top: -5px;
+    left: 5px;
+}
 
 
 .circle {
