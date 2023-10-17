@@ -1,13 +1,16 @@
 <template>
-    <div class="circle row">
-       
-            <div class="elemento0 col-6"></div>
-            <div class="elemento1 col-6"></div>
-      
-            <div class="elemento2 col-12"></div>
-        
+    <div class="contenedor">
+        <button class="circulo"></button>
+        <button class="circulo1"></button>
+        <button class="circulo2"></button>
     </div>
 
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="100 0 100 150">
+        <clipPath id="clip">
+            <path d="M 100 0 A 100 100 0 0 1 186.6 150 L 100 100 L 100 0 Z" fill="#000000" />
+        </clipPath>
+    </svg>
 </template>
 
 <style scoped>
@@ -16,6 +19,46 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+.contenedor{
+    position:relative;
+}
+
+.circulo {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    clip-path: url('#clip');
+    border: none;
+    left: -100px;
+    background: red;
+    transform: scaleX(-1);
+}
+
+.circulo1 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    clip-path: url('#clip');
+    border: none;
+    background: rgb(98, 0, 255);
+    left: -118px;
+    top: -32px;
+    transform: rotate(120deg)
+}
+
+.circulo2 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    clip-path: url('#clip');
+    border: none;
+    background: rgb(0, 255, 55);
+    transform: scale(1);
+}
+
+
+
 .circle {
     width: 200px;
     height: 200px;
@@ -42,7 +85,7 @@
 
 }
 
-.elemento0{
+.elemento0 {
     position: relative;
     height: 50%;
     width: 50%;
@@ -52,7 +95,7 @@
     z-index: 4;
 }
 
-.elemento0::after{
+.elemento0::after {
     content: '';
     position: absolute;
     height: 100%;
@@ -64,33 +107,35 @@
     z-index: 6;
     clip-path: polygon(0 0, 60% 0, 0 100%, 0 100%);
 }
-.elemento0:hover{
-    background: white;
-}
-.elemento0:hover::after{
+
+.elemento0:hover {
     background: white;
 }
 
-.elemento1{
+.elemento0:hover::after {
+    background: white;
+}
+
+.elemento1 {
     position: relative;
     height: 50%;
     width: 50%;
 }
 
-.elemento1::before{
+.elemento1::before {
     content: '';
     position: absolute;
     height: 100%;
     width: 100%;
     background: rgb(240, 5, 5);
-    top:0%;
+    top: 0%;
     left: 0px;
     z-index: 7;
     clip-path: polygon(60% 0, 100% 0, 100% 100%, 0% 100%);
     border-top-right-radius: 100%;
 }
 
-.elemento1::after{
+.elemento1::after {
     content: '';
     position: absolute;
     height: 100%;
@@ -102,55 +147,53 @@
     clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%);
     z-index: 6;
 }
-.elemento1:hover::before{
+
+.elemento1:hover::before {
     background: white;
 }
-.elemento1:hover::after{
+
+.elemento1:hover::after {
     background: white;
 }
 
 
-.elemento2{
+.elemento2 {
     position: relative;
     height: 50%;
     width: 50%;
 }
 
-.elemento2::before{
+.elemento2::before {
     content: '';
     position: absolute;
     height: 100%;
     width: 100%;
     background: rgb(44, 240, 5);
-    top:0%;
+    top: 0%;
     left: 50%;
     z-index: 8;
     clip-path: polygon(0 0, 0 0, 60% 100%, 0 100%);
     border-bottom-right-radius: 100%;
 }
-.elemento2::after{
+
+.elemento2::after {
     content: '';
     position: absolute;
     height: 100%;
     width: 100%;
     background: rgb(44, 240, 5);
-    top:0%;
+    top: 0%;
     left: -50%;
     border-bottom-left-radius: 100%;
     z-index: 8;
 }
 
-.elemento2:hover::before{
-    background: white;
-}
-.elemento2:hover::after{
+.elemento2:hover::before {
     background: white;
 }
 
-
-
-
-
-
+.elemento2:hover::after {
+    background: white;
+}
 </style>
 
