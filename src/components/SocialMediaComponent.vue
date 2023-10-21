@@ -1,14 +1,22 @@
 <template>
     <div class="contenedor">
-        <div class="circulo">
-            <ion-icon name="logo-linkedin"></ion-icon>
+        <div class="circuloContainer">
+            <div class="circulo">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
         </div>
-        <div class="circulo1">
-            <ion-icon name="logo-github"></ion-icon>
+
+        <div class="circulo1Container">
+            <div class="circulo1">
+                <ion-icon name="logo-github"></ion-icon>
+            </div>
         </div>
-        <div class="circulo2">
-            <ion-icon name="mail-outline"></ion-icon>
+        <div class="circulo2Container">
+            <div class="circulo2">
+                <ion-icon name="mail-outline"></ion-icon>
+            </div>
         </div>
+
     </div>
     <svg xmlns="http://www.w3.org/2000/svg">
         <clipPath id="clip">
@@ -25,9 +33,11 @@
 
 
 .contenedor {
-    position: relative;
+    position: absolute;
     width: 500px;
     height: 500px;
+    top: 430px;
+    left: 80px;
 }
 
 ion-icon {
@@ -42,6 +52,9 @@ ion-icon {
     border: none;
 }
 
+.circuloContainer:hover {
+    filter: drop-shadow(-29px -12px 27px rgb(118, 18, 231))
+}
 
 .circulo {
     position: absolute;
@@ -75,6 +88,11 @@ ion-icon {
     background: rgb(118, 18, 231);
     left: -108px;
     top: -5px;
+    color: white
+}
+
+.circulo1Container:hover {
+    filter: drop-shadow(4px 26px 27px rgb(118, 18, 231))
 }
 
 .circulo1 {
@@ -87,7 +105,6 @@ ion-icon {
     top: -31px;
     left: -118px;
     transform: rotate(120deg) translateZ(0);
-    ;
     background: #1e161f;
     z-index: 2;
     transition: 0.5s;
@@ -111,6 +128,11 @@ ion-icon {
 .circulo1:hover {
     background: rgb(118, 18, 231);
     top: -23px;
+    color: white
+}
+
+.circulo2Container:hover {
+    filter: drop-shadow(30px -12px 27px rgb(118, 18, 231));
 }
 
 .circulo2 {
@@ -126,7 +148,10 @@ ion-icon {
     transition: 0.5s;
     top: 0px;
     left: 0px;
+
 }
+
+
 
 .circulo2::after {
     content: '';
@@ -146,6 +171,7 @@ ion-icon {
     background: rgb(118, 18, 231);
     top: -5px;
     left: 8px;
+    color: white
 }
 
 .circulo1 ion-icon {
