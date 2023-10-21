@@ -22,6 +22,8 @@
 
 .contenedor {
     position: relative;
+    width: 500px;
+    height: 500px;
 }
 
 .circulo {
@@ -30,10 +32,11 @@
     height: 300px;
     clip-path: url('#clip');
     border: none !important;
-    left: -14%;
+    left: -99px;
     background: rgb(210, 160, 216);
     transform: scaleX(-1);
     z-index: 2;
+    transition: 0.5s;
 }
 
 .circulo::before {
@@ -41,12 +44,11 @@
     position: absolute;
     width: 300px;
     height: 300px;
+    top:-20px;
     clip-path: url('#clip');
     background-color: rgb(96, 9, 105);
-    transform: scaleX(0.95) scaleY(0.95) rotateZ(0);
+    transform: scaleX(0.75) scaleY(0.75);
     border: none !important;
-    top: -5px;
-    left: -5px;
     z-index: 2 !important;
 
 }
@@ -64,12 +66,12 @@
     height: 300px;
     clip-path: url('#clip');
     border: none;
-    top: -34px;
-    left: -117px;
+    top: -32px;
+    left: -118px;
     transform: rotateZ(120deg);
     background: rgb(210, 160, 216);
     z-index: 1;
-
+    transition: 0.5s;
 }
 
 .circulo1::before {
@@ -78,11 +80,11 @@
     width: 300px;
     height: 300px;
     clip-path: url('#clip');
-    background: rgb(96, 9, 105);
-    top: -3px;
-    left: -3px;
-    transform: scaleX(0.95) scaleY(0.95) translateZ(0);
+    background-color: rgb(96, 9, 105);
+    transform: scaleX(0.75) scaleY(0.75);
     z-index: 2;
+    left: -1px;
+    top: -17px;
 
 }
 
@@ -100,6 +102,9 @@
     background: rgb(210, 160, 216);
     transform: scaleX(1);
     z-index: 0;
+    transition: 0.5s;
+    top: 0px;
+    left: 0px;
 }
 
 
@@ -110,10 +115,9 @@
     height: 300px;
     clip-path: url('#clip');
     background: rgb(96, 9, 105);
-    transform: scaleX(0.95) scaleY(0.95) translateZ(0);
-    top: -3px;
-    left: -3px;
+    transform: scaleX(0.75) scaleY(0.75);
     z-index: 2;
+    top:-20px;
 }
 
 .circulo2:hover {
