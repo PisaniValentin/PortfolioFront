@@ -62,7 +62,7 @@ ion-icon {
     height: 300px;
     clip-path: url('#clip');
     border: none !important;
-    left: -100px;
+    left: -101px;
     background: #1e161f;
     transform: scaleX(-1) translateZ(0);
     z-index: 3 !important;
@@ -102,7 +102,7 @@ ion-icon {
     -webkit-clip-path: url('#clip');
     clip-path: url('#clip');
     border: none;
-    top: -31px;
+    top: -30px;
     left: -118px;
     transform: rotate(120deg) translateZ(0);
     background: #1e161f;
@@ -147,7 +147,7 @@ ion-icon {
     z-index: 1 !important;
     transition: 0.5s;
     top: 0px;
-    left: 0px;
+    left: 1px;
 
 }
 
