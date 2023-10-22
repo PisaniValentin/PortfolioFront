@@ -31,6 +31,13 @@
     padding: 0px;
 }
 
+@media (max-width: 425px){
+    *{
+        height: 0px;
+        width: 0px;
+        display: none;
+    }
+}
 
 .contenedor {
     position: absolute;

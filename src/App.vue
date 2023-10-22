@@ -1,22 +1,18 @@
 <script setup>
 import ProjectSection from './components/ProjectsSection.vue';
-import GithubComponent from './components/GithubComponent.vue';
 import AboutMeComponent from './components/AboutMeComponent.vue';
 import SocialMediaComponent from './components/SocialMediaComponent.vue';
 </script>
 
+
 <template>
-  <main class="row">
-    <div class="col-sm-12 col-md-4 ">
-      <div class="aboutMeContainer">
-        <AboutMeComponent />
-      </div>
+  <main class="container">
+    <div class="aboutMeContainer">
+      <AboutMeComponent />
     </div>
-    <div class="col-sm-12 col-md-8">
-      <div class="projectContainer">
-        <ProjectSection />
-        <SocialMediaComponent/>
-      </div>
+    <div class="projectContainer">
+      <ProjectSection />
+      <SocialMediaComponent />
     </div>
   </main>
 </template>
@@ -28,28 +24,24 @@ import SocialMediaComponent from './components/SocialMediaComponent.vue';
   box-sizing: border-box;
 }
 
-@media (min-width: 320px){
+
+@media (max-width: 321px) {
+  SocialMediaComponent {
+    display: flex;
+    visibility: none;
+  }
 
 
+}
+
+main {
+  min-height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to bottom, #150a29, #19051d, #170213, #100008, #000000);
+  padding: 30px;
 }
 
 .projectContainer {
   height: 100%;
 }
-
-main {
-  width: 100vw;
-  min-height: 100vh;
-  line-height: 1.5;
-  background-image: linear-gradient(to bottom, #150a29, #19051d, #170213, #100008, #000000);
-  padding: 30px;
-}
-/**
- .aboutMeContainer {
-    display: flex;
-    flex-direction: column;
-    height: 92%;
-  }
-*/
- 
 </style>
