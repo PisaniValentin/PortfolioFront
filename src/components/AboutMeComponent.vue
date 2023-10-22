@@ -1,5 +1,6 @@
 <script setup>
 import GithubComponent from './GithubComponent.vue';
+import SocialMediaComponent from './SocialMediaComponent.vue';
 </script>
 
 <template>
@@ -22,6 +23,9 @@ import GithubComponent from './GithubComponent.vue';
         </div>
         <div class="githubComp">
             <GithubComponent/>
+        </div>
+        <div>
+            <SocialMediaComponent/>
         </div>
     </div>
 </template>
@@ -69,13 +73,13 @@ import GithubComponent from './GithubComponent.vue';
         right: 10px;
     }
     .githubComp{
-        visibility: hidden;
+        display: none;
     }
 
     .aboutMeContainer {
         display: flex;
         flex-direction: column;
-        height: 325px;
+        min-height: 325px;
         background-image: linear-gradient(to right top, #3803b9, #431fc1, #4d30ca, #5740d1, #614ed9);
         border-radius: 15px;
         padding: 20px;
@@ -114,13 +118,25 @@ import GithubComponent from './GithubComponent.vue';
 
     .aboutMeContainer {
         display: flex;
+        position: fixed;
         width: 30vw;
         background-image: linear-gradient(to right top, #3803b9, #431fc1, #4d30ca, #5740d1, #614ed9);
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
         padding: 20px;
-        color: white;
+        color: rgb(0, 0, 0);
         box-shadow: rgba(0, 0, 0, 0.45) -19px 20px 20px 0px;
+    }
+    .githubComp{
+    }
+
+    SocialMediaComponent{
+        position: absolute;
+        top: 30px;
+    }
+
+    .contactInfo{
+        display: none;
     }
 }
 </style>

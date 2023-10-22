@@ -1,18 +1,17 @@
 <script setup>
 import ProjectSection from './components/ProjectsSection.vue';
 import AboutMeComponent from './components/AboutMeComponent.vue';
-import SocialMediaComponent from './components/SocialMediaComponent.vue';
+
 </script>
 
 
 <template>
-  <main class="container">
-    <div class="aboutMeContainer">
+  <main>
+    <div class="AboutMeContainer">
       <AboutMeComponent />
     </div>
     <div class="projectContainer">
       <ProjectSection />
-      <SocialMediaComponent />
     </div>
   </main>
 </template>
@@ -25,13 +24,14 @@ import SocialMediaComponent from './components/SocialMediaComponent.vue';
 }
 
 
-@media (max-width: 321px) {
-  SocialMediaComponent {
-    display: flex;
-    visibility: none;
+@media (min-width: 320px) {}
+
+@media (min-width: 768px) {
+  .projectContainer {
+    height: 100%;
+    width: 65vw;
+    margin-left: 30vw;
   }
-
-
 }
 
 main {
@@ -39,9 +39,5 @@ main {
   width: 100vw;
   background-image: linear-gradient(to bottom, #150a29, #19051d, #170213, #100008, #000000);
   padding: 30px;
-}
-
-.projectContainer {
-  height: 100%;
 }
 </style>

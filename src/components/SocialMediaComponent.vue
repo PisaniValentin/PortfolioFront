@@ -16,7 +16,6 @@
                 <ion-icon name="mail-outline"></ion-icon>
             </div>
         </div>
-
     </div>
     <svg xmlns="http://www.w3.org/2000/svg">
         <clipPath id="clip">
@@ -31,8 +30,8 @@
     padding: 0px;
 }
 
-@media (max-width: 425px){
-    *{
+@media (max-width: 425px) {
+    * {
         height: 0px;
         width: 0px;
         display: none;
@@ -41,10 +40,9 @@
 
 .contenedor {
     position: absolute;
+    z-index: 3;
     width: 500px;
     height: 500px;
-    top: 430px;
-    left: 80px;
 }
 
 ion-icon {
@@ -155,9 +153,7 @@ ion-icon {
     transition: 0.5s;
     top: 0px;
     left: 1px;
-
 }
-
 
 
 .circulo2::after {
