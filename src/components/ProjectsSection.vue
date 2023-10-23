@@ -32,6 +32,22 @@
                     content.</p>
             </div>
         </div>
+        <div class="card col-sm-12 col-md-5">
+            <img class="card-img-top" src="https://api.boosthive.eu/media/image/4c/88/81965a5dffce6e4d223649ef0f78.jpeg"
+                alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                    content.</p>
+            </div>
+        </div>
+        <div class="card col-sm-12 col-md-5">
+            <img class="card-img-top" src="https://api.boosthive.eu/media/image/4c/88/81965a5dffce6e4d223649ef0f78.jpeg"
+                alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                    content.</p>
+            </div>
+        </div>
        
     </div>
 </template>

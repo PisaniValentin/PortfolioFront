@@ -29,8 +29,8 @@ import AboutMeComponent from './components/AboutMeComponent.vue';
 @media (min-width: 768px) {
   .projectContainer {
     height: 100%;
-    width: 65vw;
-    margin-left: 30vw;
+    width: 60vw;
+    margin-left: 33vw;
   }
 }
 
