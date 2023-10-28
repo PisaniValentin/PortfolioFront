@@ -67,9 +67,9 @@ ion-icon {
     height: 300px;
     clip-path: url('#clip');
     border: none !important;
-    left: -101px;
+    left: -102px;
     background: #1e161f;
-    transform: scaleX(-1) translateZ(0);
+    transform: scaleX(-0.6) scaleY(0.6) translateZ(0);
     z-index: 3 !important;
     transition: 0.5s;
 
@@ -91,8 +91,8 @@ ion-icon {
 
 .circulo:hover {
     background: rgb(118, 18, 231);
-    left: -108px;
-    top: -5px;
+    left: -106px;
+    top: -2px;
     color: white
 }
 
@@ -107,9 +107,9 @@ ion-icon {
     -webkit-clip-path: url('#clip');
     clip-path: url('#clip');
     border: none;
-    top: -30px;
-    left: -118px;
-    transform: rotate(120deg) translateZ(0);
+    top: -17px;
+    left: -112px;
+    transform: rotate(120deg) scaleX(0.6) scaleY(0.6) translateZ(0);
     background: #1e161f;
     z-index: 2;
     transition: 0.5s;
@@ -132,7 +132,7 @@ ion-icon {
 
 .circulo1:hover {
     background: rgb(118, 18, 231);
-    top: -23px;
+    top: -14px;
     color: white
 }
 
@@ -148,11 +148,11 @@ ion-icon {
     clip-path: url('#clip');
     border: none !important;
     background: #1e161f;
-    transform: scaleX(1) translateZ(0);
+    transform: scaleX(0.6) scaleY(0.6) translateZ(0);
     z-index: 1 !important;
     transition: 0.5s;
     top: 0px;
-    left: 1px;
+    left: -40px;
 }
 
 
@@ -172,8 +172,8 @@ ion-icon {
 
 .circulo2:hover {
     background: rgb(118, 18, 231);
-    top: -5px;
-    left: 8px;
+    top: -2px;
+    left: -36px;
     color: white
 }
 

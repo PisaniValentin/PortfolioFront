@@ -120,6 +120,7 @@ import SocialMediaComponent from './SocialMediaComponent.vue';
         display: flex;
         position: fixed;
         width: 30vw;
+        height: 88vh;
         background-image: linear-gradient(to right top, #3803b9, #431fc1, #4d30ca, #5740d1, #614ed9);
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
